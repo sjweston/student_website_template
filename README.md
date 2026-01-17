@@ -14,7 +14,7 @@ A clean, professional academic website template for graduate students built with
 
 ## Live Demo
 
-See an example of this template in action: [Your example site URL]
+See an example of this template in action [here](https://sarajweston.com/student_website_template/)
 
 ## Quick Start
 
