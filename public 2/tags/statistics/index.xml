@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Statistics | Your Name</title>
+    <link>http://localhost:1313/tags/statistics/</link>
+      <atom:link href="http://localhost:1313/tags/statistics/index.xml" rel="self" type="application/rss+xml" />
+    <description>Statistics</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Apr 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/icon_hu_bf586d412669769d.png</url>
+      <title>Statistics</title>
+      <link>http://localhost:1313/tags/statistics/</link>
+    </image>
+    
+    <item>
+      <title>PSY 302 - Statistical Methods</title>
+      <link>http://localhost:1313/teaching/psy-302/</link>
+      <pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/teaching/psy-302/</guid>
+      <description>&lt;h2 id=&#34;course-description&#34;&gt;Course Description&lt;/h2&gt;
+&lt;p&gt;A foundational course in statistical methods for psychology, building on Scientific Thinking (PSY 301) and preparing students for Research Methods (PSY 303). Topics include descriptive statistics, probability, hypothesis testing, correlation, ANOVA, and regression. Students gain hands-on experience with statistical software (Jamovi) and learn to interpret and report analyses using APA style.&lt;/p&gt;
+&lt;h2 id=&#34;my-responsibilities-as-a-ge&#34;&gt;My Responsibilities as a GE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Held regular office hours to help students with statistical concepts and assignments&lt;/li&gt;
+&lt;li&gt;Led weekly lab sections to teach Jamovi software and statistical analysis&lt;/li&gt;
+&lt;li&gt;Provided support for weekly homework assignments and quizzes&lt;/li&gt;
+&lt;li&gt;Helped students troubleshoot data analysis problems&lt;/li&gt;
+&lt;li&gt;Assisted with grading and exam preparation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;course-components&#34;&gt;Course Components&lt;/h2&gt;
+&lt;p&gt;I supported students across multiple learning activities:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Weekly lab sections&lt;/strong&gt; (5%): Hands-on practice with Jamovi statistical software&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Jamovi homework assignments&lt;/strong&gt; (20%): Weekly data analysis problems&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Weekly quizzes&lt;/strong&gt; (20%): Online assessments of statistical concepts&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;In-class activities&lt;/strong&gt; (5%): Interactive exercises during lectures&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Exams&lt;/strong&gt; (50%): Two midterms and a cumulative final&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;teaching-approach&#34;&gt;Teaching Approach&lt;/h2&gt;
+&lt;p&gt;In lab sections, I emphasized conceptual understanding alongside computational skills. I worked to demystify statistics by connecting abstract concepts to concrete research examples and helping students develop intuition for when to apply different statistical tests.&lt;/p&gt;
+&lt;h2 id=&#34;skills-developed&#34;&gt;Skills Developed&lt;/h2&gt;
+&lt;p&gt;Teaching statistics strengthened my own quantitative skills and taught me how to explain complex mathematical concepts in accessible ways. I became more proficient with statistical software and learned effective strategies for helping students overcome statistics anxiety.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

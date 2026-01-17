@@ -88,8 +88,16 @@ Create folders in `content/teaching/` (see examples)
 
 ## 6. Deploy to GitHub Pages
 
+### Option A: Using GitHub Desktop (Easier)
+1. Install [GitHub Desktop](https://desktop.github.com/)
+2. Create repo on GitHub.com named `yourusername.github.io`
+3. In GitHub Desktop: File → Clone Repository → select your repo
+4. Copy all your website files into the cloned folder
+5. In GitHub Desktop: Commit changes → Push origin
+
+### Option B: Using Terminal
 ```bash
-# Create a repo named: yourusername.github.io
+# Create a repo named: yourusername.github.io on GitHub.com first
 git init
 git add .
 git commit -m "Initial commit"
@@ -98,7 +106,7 @@ git remote add origin https://github.com/yourusername/yourusername.github.io.git
 git push -u origin main
 ```
 
-Then:
+### Enable GitHub Pages:
 1. Go to repo Settings → Pages
 2. Under "Source", select "GitHub Actions"
 3. Wait 2-3 minutes for deployment
@@ -106,4 +114,4 @@ Then:
 
 Done! 🎉
 
-For detailed instructions, see [README.md](README.md).
+For detailed instructions and troubleshooting, see [README.md](README.md).

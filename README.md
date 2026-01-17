@@ -356,6 +356,55 @@ What you did as a TA or instructor.
 - Topic 3
 ```
 
+## Using GitHub Desktop (Recommended for Beginners)
+
+If you're not comfortable with Git commands in the terminal, [GitHub Desktop](https://desktop.github.com/) provides an easy-to-use graphical interface for managing your repository.
+
+### Setup with GitHub Desktop
+
+1. **Download and install GitHub Desktop** from [desktop.github.com](https://desktop.github.com/)
+
+2. **Sign in to GitHub** in the app (File → Options → Accounts on Windows, or GitHub Desktop → Preferences → Accounts on Mac)
+
+3. **Clone your repository:**
+   - In GitHub Desktop: File → Clone Repository
+   - Select your `yourusername.github.io` repository
+   - Choose where to save it on your computer
+   - Click "Clone"
+
+4. **Make changes to your files** using any text editor (VS Code, Sublime Text, or even TextEdit/Notepad)
+
+5. **Commit and push changes:**
+   - Open GitHub Desktop
+   - You'll see all your changed files on the left
+   - Write a summary of your changes (e.g., "Updated my profile information")
+   - Click "Commit to main"
+   - Click "Push origin" to upload your changes to GitHub
+
+6. **GitHub Actions will automatically deploy** your changes in a few minutes
+
+### Alternative: Using Git in Terminal
+
+If you prefer using the terminal:
+
+```bash
+# First, make sure you're in the correct directory
+cd path/to/your/website/folder
+
+# Verify you're in the right place (should show your website directory)
+pwd
+
+# Should show files like config/, content/, etc.
+ls
+
+# Make your changes to files, then commit and push:
+git add .
+git commit -m "Description of your changes"
+git push
+```
+
+**⚠️ Common mistake:** Running git commands in the wrong directory. Always use `pwd` to verify you're in your website folder before running git commands.
+
 ## Deployment
 
 ### Deploying to GitHub Pages
@@ -371,6 +420,10 @@ What you did as a TA or instructor.
    ```
 
 3. **Push your code to GitHub:**
+
+   **Using GitHub Desktop:** Follow the steps in the "Using GitHub Desktop" section above.
+
+   **Using Terminal:**
    ```bash
    git init
    git add .
@@ -523,24 +576,110 @@ main:
 
 ## Troubleshooting
 
-### "binary with name 'go' not found in PATH"
-This error means Go is not installed. The Hugo Blox theme requires Go to download theme modules.
+### Common Issues
 
-**Solution:** Install Go using the instructions in the Prerequisites section above:
+#### Working in the wrong directory
+**Problem:** Running `hugo server` or git commands in the wrong folder.
+
+**Solution:**
+1. Open Terminal/Command Prompt
+2. Use `cd` to navigate to your website folder:
+   ```bash
+   cd path/to/your/website/folder
+   ```
+3. Verify you're in the right place:
+   ```bash
+   pwd    # Shows current directory
+   ls     # Should list: config/, content/, static/, etc.
+   ```
+
+#### Forgot to change the title in hugo.yaml
+**Problem:** Site breaks because the title field in `config/_default/hugo.yaml` wasn't updated properly.
+
+**Solution:**
+1. Open `config/_default/hugo.yaml`
+2. Make sure line 7 has a valid title (no special characters like `_` at the start):
+   ```yaml
+   title: Your Name  # ✓ Good
+   title: _Your Name  # ✗ Bad - remove the underscore
+   ```
+3. Save the file and run `hugo server` again
+
+#### File naming issues causing caching problems
+**Problem:** Created files with wrong names (e.g., `_index.md` instead of `index.md` in blog post folders).
+
+**Solution:**
+- Blog posts should be in folders like `content/post/my-post/index.md`
+- NOT `content/post/my-post/_index.md`
+- If you renamed files, clear Hugo's cache:
+  ```bash
+  hugo mod clean
+  rm -rf public/
+  hugo server
+  ```
+
+#### SSH key setup for GitHub
+**Problem:** GitHub asks for password repeatedly or authentication fails.
+
+**Solution:** Set up an SSH key:
+1. Generate a new SSH key:
+   ```bash
+   ssh-keygen -t ed25519 -C "your_email@example.com"
+   ```
+   Press Enter to accept the default location, and optionally add a passphrase.
+
+2. Copy your public key:
+   ```bash
+   cat ~/.ssh/id_ed25519.pub
+   ```
+
+3. Add to GitHub:
+   - Go to GitHub.com → Click your profile picture → Settings
+   - Click "SSH and GPG keys" (left sidebar)
+   - Click "New SSH key"
+   - Give it a title (like "My MacBook")
+   - Paste your key
+   - Click "Add SSH key"
+
+4. When cloning repositories, use the SSH URL instead of HTTPS:
+   ```bash
+   git clone git@github.com:yourusername/yourusername.github.io.git
+   ```
+
+### Installation Issues
+
+#### "binary with name 'go' not found in PATH"
+**Problem:** Go is not installed. The Hugo Blox theme requires Go to download theme modules.
+
+**Solution:** Install Go:
 - macOS: `brew install go`
 - Windows: Download from [go.dev/dl](https://go.dev/dl/) or `choco install golang`
 - Linux: `sudo apt-get install golang`
 
-After installing Go, run `hugo server` again.
+After installing Go, run `hugo mod get` then `hugo server` again.
 
-### "Hugo command not found"
-Make sure Hugo is installed correctly. Run `hugo version` to check.
+#### "Hugo command not found"
+**Problem:** Hugo is not installed or not in your system PATH.
 
-### Site looks broken locally
-1. Make sure you're running `hugo server` from the root directory
+**Solution:**
+1. Install Hugo (see Prerequisites section)
+2. Verify installation: `hugo version`
+3. If installed but not found, check your PATH environment variable
+
+### Site Building Issues
+
+#### Site looks broken locally
+**Solutions:**
+1. Make sure you're running `hugo server` from the root directory (where `config/` folder is)
 2. Check that all required files are present
 3. Try stopping the server (Ctrl+C) and restarting it
 4. Make sure both Hugo and Go are installed
+5. Clear the cache:
+   ```bash
+   hugo mod clean
+   rm -rf public/ resources/
+   hugo server
+   ```
 
 ### Changes not appearing on GitHub Pages
 1. Check the Actions tab for build errors
