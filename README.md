@@ -126,7 +126,7 @@ baseURL: 'https://yourusername.github.io/'  # Change to your GitHub username
 Update the following:
 ```yaml
 appearance:
-  color: ocean  # Choose a color theme (see below for options)
+  color: cyan  # Choose a color theme (see below for options)
 
 marketing:
   seo:
@@ -143,7 +143,7 @@ footer:
     notice: '© {year} Your Name. This work is licensed under {license}'
 ```
 
-**Available color themes:** ocean, emerald, forest, dark, minimal, mr robot, strawberry, coffee, rose, earth, and more. See the [full list here](https://docs.hugoblox.com/getting-started/customization/#appearance).
+**Available color themes:** ocean, emerald, forest, dark, minimal, mr robot, strawberry, coffee, rose, earth, and more. See the [full list here](https://docs.hugoblox.com/guides/theming/).
 
 ### Step 2: Update Your Profile
 
