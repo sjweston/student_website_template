@@ -1,14 +1,14 @@
 ---
 # Display name
-title: Your Name
+title: Alexa Aringer
 
 # Full name (for SEO)
-first_name: Your
-last_name: Name
+first_name: Alexandra
+last_name: Aringer
 
 # Status emoji (optional - delete if you don't want one)
 status:
-  icon: 🎓
+  icon: 
 
 # Is this the primary user of the site?
 superuser: true
@@ -17,27 +17,27 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: PhD Student in Psychology
+role: PhD Student in Clinical Psychology
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
   - name: University of Oregon
-    url: https://naturalsciences.uoregon.edu/psychology
+    url: https://cas.uoregon.edu/directory/psychology/all/aaringer
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
-    url: 'mailto:your.email@uoregon.edu'
+    url: 'mailto:aaringer@uoregon.edu'
     label: E-mail Me
   - icon: brands/github
     url: https://github.com/yourusername
   - icon: brands/linkedin
-    url: https://www.linkedin.com/in/yourprofile
+    url: https://www.linkedin.com/in/alexandra-aringer/
   - icon: academicons/google-scholar
-    url: https://scholar.google.com/citations?user=YOURSCHOLARID
+    url: https://scholar.google.com/citations?user=dcLf21AAAAAJ
   - icon: academicons/orcid
-    url: https://orcid.org/0000-0000-0000-0000
+    url: https://orcid.org/0009-0007-1017-9568
 
 interests:
   - Social Psychology
@@ -46,9 +46,9 @@ interests:
   - Quantitative Methods
 
 education:
-  - area: PhD Psychology
+  - area: PhD, Clinical & Developmental Psychology
     institution: University of Oregon
-    date_start: 2021-09-01
+    date_start: 2024-09-01
     date_end: ''
     summary: |
       Research on social cognition and health behavior change.
@@ -103,19 +103,19 @@ skills:
         percent: 90
         icon: code-bracket
 
-# Awards (optional - comment out or delete if you don't have awards yet)
-# awards:
-#   - title: Graduate Research Fellowship
-#     url: https://www.nsfgrfp.org/
-#     date: '2022-01-01'
-#     awarder: National Science Foundation
-#     summary: |
-#       Competitive fellowship supporting graduate research.
+# Awards
+awards:
+  - title: Graduate Research Fellowship
+    url: https://www.nsfgrfp.org/
+    date: '2022-01-01'
+    awarder: National Science Foundation
+    summary: |
+      Competitive fellowship supporting graduate research.
 ---
 
 ## About Me
 
-I am a PhD student in Psychology at University Name, working with Prof. Advisor Name. My research examines how social and psychological factors influence health behavior and well-being. I use a combination of experimental methods, surveys, and longitudinal designs to understand these processes.
+I am a PhD student in Clinical and Developmental Psychology at University of Oregon, working with Dr. Sheila Crowell. My research examines how social and psychological factors influence health behavior and well-being. I use a combination of experimental methods, surveys, and longitudinal designs to understand these processes.
 
 I am particularly interested in how personality traits and social relationships shape health outcomes over time. My current projects investigate stress, coping, and resilience in diverse populations.
 
