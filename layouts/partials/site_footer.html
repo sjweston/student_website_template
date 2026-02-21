@@ -1,0 +1,38 @@
+{{/* Site footer — custom override to remove "Published with Hugo Blox Builder" */}}
+<footer class="site-footer">
+
+  {{/* Privacy / Terms links */}}
+  {{ if or (site.GetPage "privacy.md") (site.GetPage "terms.md") }}
+  <p class="powered-by">
+    {{ with site.GetPage "privacy.md" }}
+      {{ printf "<a href=\"%s\">%s</a>" .RelPermalink .Title | safeHTML }}
+    {{ end }}
+    {{ with site.GetPage "terms.md" }}
+      {{ if site.GetPage "privacy.md" }} &middot; {{ end }}
+      {{ printf "<a href=\"%s\">%s</a>" .RelPermalink .Title | safeHTML }}
+    {{ end }}
+  </p>
+  {{ end }}
+
+  {{/* Copyright notice */}}
+  <p class="powered-by">
+    {{ with site.Copyright }}{{ replace . "{year}" now.Year | markdownify }}{{ end }}
+  </p>
+
+  {{/* License */}}
+  {{ partial "site_footer_license" . }}
+
+  {{/* Back-to-top button */}}
+  {{ if not (in (slice "book" "docs" "updates") .Type) }}
+  <p class="powered-by">
+    <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+  </p>
+  {{ end }}
+
+</footer>

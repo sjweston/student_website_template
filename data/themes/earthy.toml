@@ -1,0 +1,26 @@
+# Earthy academic theme — warm terracotta & cream
+name = "earthy"
+light = true
+
+# Primary accent: warm terracotta/sienna
+primary = "#8B5E3C"
+
+# Navbar
+menu_primary = "#FEFCF9"        # soft warm white
+menu_text = "#4A3728"           # dark warm brown
+menu_text_active = "#8B5E3C"    # match primary
+menu_title = "#2E1E14"          # near-black warm brown
+
+# Light mode backgrounds
+background = "#FAF6F0"          # warm parchment/cream
+home_section_odd = "#FAF6F0"
+home_section_even = "#F0E8DC"   # slightly deeper warm cream
+
+# Dark mode backgrounds
+dark_background = "#1A1510"
+dark_home_section_odd = "#1A1510"
+dark_home_section_even = "#231C15"
+
+# Links — light mode
+link = "#8B5E3C"
+link_hover = "#6B4028"
