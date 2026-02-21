@@ -10,13 +10,6 @@ title: Alexa Aringer
 # For GitHub Pages: https://yourusername.github.io/
 baseURL: https://aaringer.github.io/
 
-  theme:
-    pack: "default"
-    mode: system
-  typography:
-    font: "serif"  # sans | serif | native
-    size: "md"    # sm | md | lg | xl
-
 # Google Analytics (optional - leave empty if not using)
 googleAnalytics: ""
 
