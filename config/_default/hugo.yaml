@@ -4,11 +4,11 @@
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 # Website name - CHANGE THIS to your name
-title: Your Name
+title: Alexa Aringer
 
 # Website URL - CHANGE THIS to your GitHub Pages URL or custom domain
 # For GitHub Pages: https://yourusername.github.io/
-baseURL: https://yourusername.github.io/
+baseURL: https://aaringer.github.io/
 
 # Google Analytics (optional - leave empty if not using)
 googleAnalytics: ""

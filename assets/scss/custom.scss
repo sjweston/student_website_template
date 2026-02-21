@@ -1,0 +1,202 @@
+/* ============================================================
+   Earthy Academic Theme — Custom CSS
+   Clinical Psychology PhD | Warm terracotta + cream palette
+   ============================================================ */
+
+/* Load Crimson Pro from Google Fonts as a fallback if the
+   data/fonts/earthy.toml approach isn't picked up */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+/* ── Crimson Pro across the whole site ─────────────────────── */
+body,
+.navbar,
+.navbar .navbar-brand,
+h1, h2, h3, h4, h5, h6,
+.article-title,
+.page-title,
+.btn,
+p, li, td, th, blockquote {
+  font-family: 'Crimson Pro', Georgia, 'Times New Roman', serif;
+}
+
+code, pre, .highlight, kbd {
+  font-family: 'JetBrains Mono', 'Fira Mono', monospace;
+  font-size: 0.88em;
+}
+
+/* Slightly larger base size — Crimson Pro reads well at 18–19px */
+body {
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+/* ── Primary color CSS variables ───────────────────────────── */
+:root {
+  --color-primary: #8B5E3C;
+  --color-primary-rgb: 139, 94, 60;
+  --color-link: #8B5E3C;
+  --color-link-hover: #6B4028;
+  --bs-link-color: #8B5E3C;
+  --bs-link-hover-color: #6B4028;
+  --bs-primary: #8B5E3C;
+  --bs-primary-rgb: 139, 94, 60;
+}
+
+/* Dark mode — sandy gold links are readable on deep brown bg */
+html.dark,
+[data-mode="dark"] {
+  --color-primary: #C49A6C;
+  --color-link: #C49A6C;
+  --color-link-hover: #D4AA7A;
+  --bs-link-color: #C49A6C;
+  --bs-link-hover-color: #D4AA7A;
+}
+
+/* ── Body backgrounds ───────────────────────────────────────── */
+body {
+  background-color: #FAF6F0;
+}
+
+html.dark body,
+[data-mode="dark"] body {
+  background-color: #1A1510;
+}
+
+/* ── Navbar ─────────────────────────────────────────────────── */
+.navbar {
+  border-bottom: 1px solid rgba(139, 94, 60, 0.12);
+  /* subtle warm blur on scroll */
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+}
+
+html.dark .navbar,
+[data-mode="dark"] .navbar {
+  border-bottom-color: rgba(196, 154, 108, 0.15);
+}
+
+/* ── Headings ───────────────────────────────────────────────── */
+h1 { font-size: 2.4rem; font-weight: 600; letter-spacing: -0.02em; }
+h2 { font-size: 1.85rem; font-weight: 600; letter-spacing: -0.015em; }
+h3 { font-size: 1.45rem; font-weight: 600; }
+h4 { font-size: 1.2rem;  font-weight: 600; }
+
+/* Article / page titles */
+.article-title a,
+.page-title {
+  color: #2E1E14;
+}
+
+html.dark .article-title a,
+html.dark .page-title {
+  color: #E8D5C0;
+}
+
+/* ── Cards ──────────────────────────────────────────────────── */
+.card,
+.card-simple {
+  border-color: #E5D9CE;
+  box-shadow: 0 1px 3px rgba(46, 30, 20, 0.07);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.card:hover,
+.card-simple:hover {
+  box-shadow: 0 4px 18px rgba(46, 30, 20, 0.13);
+  transform: translateY(-2px);
+}
+
+html.dark .card,
+html.dark .card-simple {
+  border-color: rgba(196, 154, 108, 0.18);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
+}
+
+/* ── Tags / badges ──────────────────────────────────────────── */
+.badge,
+a.badge,
+.article-tag {
+  background-color: rgba(139, 94, 60, 0.1) !important;
+  color: #6B4028 !important;
+  border: 1px solid rgba(139, 94, 60, 0.22);
+  font-family: 'Crimson Pro', serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.01em;
+}
+
+.badge:hover,
+a.badge:hover {
+  background-color: rgba(139, 94, 60, 0.2) !important;
+}
+
+html.dark .badge,
+html.dark a.badge,
+html.dark .article-tag {
+  background-color: rgba(196, 154, 108, 0.12) !important;
+  color: #C49A6C !important;
+  border-color: rgba(196, 154, 108, 0.25);
+}
+
+/* ── Buttons ────────────────────────────────────────────────── */
+.btn-primary,
+.btn-outline-primary:hover {
+  background-color: #8B5E3C;
+  border-color: #8B5E3C;
+}
+
+.btn-outline-primary {
+  color: #8B5E3C;
+  border-color: #8B5E3C;
+}
+
+html.dark .btn-outline-primary {
+  color: #C49A6C;
+  border-color: #C49A6C;
+}
+
+/* ── Blockquotes ────────────────────────────────────────────── */
+blockquote {
+  border-left: 3px solid #C49A6C;
+  background: rgba(139, 94, 60, 0.04);
+  padding: 0.75rem 1.25rem;
+  border-radius: 0 4px 4px 0;
+  font-style: italic;
+  color: #4A3728;
+}
+
+html.dark blockquote {
+  border-left-color: #8B5E3C;
+  background: rgba(196, 154, 108, 0.06);
+  color: #E8D5C0;
+}
+
+/* ── Code blocks ────────────────────────────────────────────── */
+pre,
+.highlight {
+  background-color: #F5EDE3 !important;
+  border: 1px solid #E5D9CE;
+  border-radius: 6px;
+}
+
+html.dark pre,
+html.dark .highlight {
+  background-color: #231C15 !important;
+  border-color: rgba(196, 154, 108, 0.18);
+}
+
+/* ── Footer ─────────────────────────────────────────────────── */
+.site-footer {
+  border-top: 1px solid #E5D9CE;
+  background-color: #F2EAE0;
+}
+
+html.dark .site-footer {
+  border-top-color: rgba(196, 154, 108, 0.15);
+  background-color: #231C15;
+}
+
+/* Fallback: hide any remaining Hugo Blox attribution link */
+.powered-by a[href*="hugoblox"],
+.powered-by a[href*="wowchemy"] {
+  display: none;
+}

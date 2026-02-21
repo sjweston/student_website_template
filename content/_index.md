@@ -64,26 +64,26 @@ sections:
       view: card
       columns: 2
 
-  - block: collection
-    id: blog
-    content:
-      title: Recent Blog Posts
-      subtitle: ''
-      text: ''
-      page_type: post
-      count: 5
-      filters:
-        author: ""
-        category: ""
-        tag: ""
-        exclude_featured: false
-        exclude_future: false
-        exclude_past: false
-        publication_type: ""
-      offset: 0
-      order: desc
-    design:
-      view: compact
-      spacing:
-        padding: [0, 0, 0, 0]
+  # - block: collection
+  #   id: blog
+  #   content:
+  #     title: Recent Blog Posts
+  #     subtitle: ''
+  #     text: ''
+  #     page_type: post
+  #     count: 5
+  #     filters:
+  #       author: ""
+  #       category: ""
+  #       tag: ""
+  #       exclude_featured: false
+  #       exclude_future: false
+  #       exclude_past: false
+  #       publication_type: ""
+  #     offset: 0
+  #     order: desc
+  #   design:
+  #     view: compact
+  #     spacing:
+  #       padding: [0, 0, 0, 0]
 ---

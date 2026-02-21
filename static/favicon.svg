@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Earthy terracotta background with soft rounded corners -->
+  <rect width="512" height="512" rx="100" fill="#8B5E3C"/>
+  <!-- Subtle warm inner glow -->
+  <rect width="512" height="512" rx="100" fill="url(#glow)" opacity="0.25"/>
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#C49A6C"/>
+      <stop offset="100%" stop-color="#8B5E3C"/>
+    </radialGradient>
+  </defs>
+  <!-- "A" monogram in warm cream serif style -->
+  <text
+    x="256"
+    y="378"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="360"
+    font-weight="600"
+    fill="#FAF6F0"
+    text-anchor="middle"
+    dominant-baseline="auto"
+    letter-spacing="-8">A</text>
+</svg>
