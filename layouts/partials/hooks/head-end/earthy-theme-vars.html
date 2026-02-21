@@ -1,0 +1,26 @@
+{{/* Earthy academic theme — inline CSS variables injected after Hugo Blox theme-pack
+     styles so this always wins the cascade regardless of what pack is resolved. */}}
+<style>
+:root {
+  --bs-primary:          #8B5E3C;
+  --bs-primary-rgb:      139, 94, 60;
+  --bs-link-color:       #8B5E3C;
+  --bs-link-hover-color: #6B4028;
+  --primary:             #8B5E3C;
+  --color-primary:       #8B5E3C;
+}
+/* Force navbar background (Hugo Blox sets this via theme-pack inline vars too) */
+.navbar { background-color: #FEFCF9 !important; }
+html.dark .navbar { background-color: #1A1510 !important; }
+
+/* Dark-mode variable overrides */
+html.dark,
+[data-mode="dark"] {
+  --bs-primary:          #C49A6C;
+  --bs-primary-rgb:      196, 154, 108;
+  --bs-link-color:       #C49A6C;
+  --bs-link-hover-color: #D4AA7A;
+  --primary:             #C49A6C;
+  --color-primary:       #C49A6C;
+}
+</style>
